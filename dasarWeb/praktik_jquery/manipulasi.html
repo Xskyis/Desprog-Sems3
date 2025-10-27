@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleCSS.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Tombol 1: Menambahkan kelas CSS ke elemen
+            $(".btn1").click(function() {
+                $("h1, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+
+            // Tombol 2: Menghapus kelas CSS dari elemen
+            $(".btn2").click(function() {
+                $("h1, h2, p").removeClass("blue");
+            });
+
+            // Tombol 3: Mengatur properti CSS secara langsung
+            $(".btn3").click(function() {
+                $("h1, h2, p, div").css({
+                    "background-color": "yellow",
+                    "font-size": "100%"
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <div>This is some important text!</div><br>
+
+    <button class="btn1">Add classes to elements</button>
+    <button class="btn2">Remove classes to elements</button>
+    <button class="btn3">Set CSS properties</button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleTable.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Fungsi untuk menambah baris baru ke tabel
+            $(".add-row").click(function() {
+                var name = $("#name").val();
+                var email = $("#email").val();
+                
+                // Membuat baris HTML baru dengan data dari input
+                var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + email + "</td></tr>";
+                $("table tbody").append(markup);
+
+                // Mengosongkan input field setelah data ditambahkan
+                $("#name").val("");
+                $("#email").val("");
+            });
+
+            // Fungsi untuk menghapus baris yang dicentang
+            $(".delete-row").click(function() {
+                // Mencari semua checkbox dengan nama 'record' yang dicentang
+                $("table tbody").find("input[name='record']:checked").each(function() {
+                    // Menghapus elemen <tr> yang merupakan induk dari checkbox yang dicentang
+                    $(this).parents("tr").remove();
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="email" placeholder="Email Address">
+        <input type="button" class="add-row" value="Add Row">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <td>Tony Stark</td>
+                <td>tonystark@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="delete-row">Delete Row</button>
+</body>

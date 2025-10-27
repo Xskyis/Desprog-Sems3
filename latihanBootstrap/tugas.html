@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profil | Achmad Nabil Afgareza</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#home">nabilfgrza_</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section id="home" class="bg-light bg-gradient py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge rounded-pill text-bg-primary mb-2"
+              >Mahasiswa TI</span
+            >
+            <h1 class="display-5 fw-bold mb-3">Achmad Nabil Afgareza</h1>
+            <p class="lead mb-4">
+              NIM: <strong>244107020001</strong> • Kelas: <strong>TI-2E</strong
+              ><br />
+              Jurusan: <strong>Teknologi Informasi</strong> • Prodi:
+              <strong>Teknik Informatika</strong>
+            </p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#portfolio" class="btn btn-primary btn-lg"
+                >Lihat Portofolio</a
+              >
+              <button
+                class="btn btn-outline-secondary btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+              >
+                Kontak Saya
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img
+              src="https://pa1.aminoapps.com/6528/81b96ea86c113e65cc47d05dfdd97d9333d8f5ba_00.gif"
+              alt="Foto Profil Achmad Nabil Afgareza"
+              class="img-fluid rounded-4 shadow"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="h3 mb-3">Tentang Saya</h2>
+            <p>
+              Saya adalah mahasiswa Program Studi Teknik Informatika yang
+              tertarik pada pengembangan web, UI/UX, dan teknologi modern.
+              Halaman ini dibuat menggunakan
+              <span class="fw-semibold">Bootstrap</span> untuk menampilkan
+              komponen UI yang responsif dan konsisten.
+            </p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-6">
+                <ul class="list-group">
+                  <li
+                    class="list-group-item d-flex justify-content-start align-items-center"
+                  >
+                    NIM: 244107020001
+                  </li>
+                  <li class="list-group-item">Kelas: TI-2E</li>
+                  <li class="list-group-item">Jurusan: Teknologi Informasi</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-group">
+                  <li class="list-group-item">Prodi: Teknik Informatika</li>
+                  <li class="list-group-item">Domisili: Malang</li>
+                  <li class="list-group-item">Minat: Web Dev, UI/UX, Tech</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h2 class="h3 mb-0">Portofolio</h2>
+          <a href="#contact" class="btn btn-sm btn-outline-primary"
+            >Kolaborasi</a
+          >
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://st4.depositphotos.com/2466369/27546/v/450/depositphotos_275463144-stock-illustration-dashboard-admin-panel-vector-design.jpg"
+                class="card-img-top"
+                alt="Proyek 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyek 1</h5>
+                <p class="card-text">
+                  Deskripsi singkat proyek menggunakan HTML, CSS, dan Bootstrap.
+                </p>
+                <a href="#" class="btn btn-primary btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://st4.depositphotos.com/2466369/23208/v/450/depositphotos_232083330-stock-illustration-modern-flat-web-page-design.jpg"
+                class="card-img-top"
+                alt="Proyek 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyek 2</h5>
+                <p class="card-text">
+                  Aplikasi sederhana berbasis JavaScript dengan tampilan
+                  responsif.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="https://st3.depositphotos.com/2466369/36894/v/450/depositphotos_368948468-stock-illustration-web-development-flat-landing-page.jpg"
+                class="card-img-top"
+                alt="Proyek 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyek 3</h5>
+                <p class="card-text">
+                  Eksplorasi komponen Bootstrap lanjutan: modal, accordion, dan
+                  carousel.
+                </p>
+                <a href="#" class="btn btn-outline-secondary btn-sm"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="h3 mb-3">Kontak</h2>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  placeholder="Nama Anda"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="nama@contoh.com"
+                />
+              </div>
+              <div class="col-12">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea
+                  id="pesan"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Tulis pesan..."
+                ></textarea>
+              </div>
+              <div class="col-12 d-flex gap-2">
+                <button type="submit" class="btn btn-primary">Kirim</button>
+                <button type="reset" class="btn btn-outline-secondary">
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <div class="p-3 border rounded-3 h-100">
+              <h6 class="mb-2">Informasi</h6>
+              <p class="mb-1">Nama: Achmad Nabil Afgareza</p>
+              <p class="mb-1">NIM: 244107020001</p>
+              <p class="mb-1">Kelas: TI-2E</p>
+              <p class="mb-1">Jurusan: Teknologi Informasi</p>
+              <p class="mb-3">Prodi: Teknik Informatika</p>
+              <button
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+              >
+                Lihat Detail Kontak
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Kontak -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Kontak Saya</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Email: example@mail.com</li>
+              <li class="list-group-item">Instagram: @username</li>
+              <li class="list-group-item">
+                LinkedIn: linkedin.com/in/username
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a href="#contact" class="btn btn-primary">Kirim Pesan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <small>
+              &copy; <span id="year"></span> Achmad Nabil Afgareza — Teknik
+              Informatika, TI-2E
+            </small>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#home" class="link-light text-decoration-none"
+              >Kembali ke atas</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

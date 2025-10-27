@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(bg1.jpeg);
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #D3DAD9;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 12px;
+}
+
+.container-satu .kolom-utama {
+    width: 60%;
+    order: 2;
+}
+
+.container-satu .sidebar-satu {
+    width: 20%;
+    margin-right: 50px;
+    order: 1;
+}
+
+.container-satu .sidebar-dua {
+    width: 20%;
+    order: 3;
+}
+
+.gambar {
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
